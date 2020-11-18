@@ -162,8 +162,7 @@ void RBTree::fixViolation(Node *&root, Node *&pt)
 			Node *uncle_pt = grand_parent_pt->right; 
 
 			
-			if (uncle_pt != NULL && uncle_pt->color == 
-												RED) 
+			if (uncle_pt != NULL && uncle_pt->color == RED) 
 			{ 
 				grand_parent_pt->color = RED; 
 				parent_pt->color = BLACK; 
@@ -194,8 +193,7 @@ void RBTree::fixViolation(Node *&root, Node *&pt)
 			Node *uncle_pt = grand_parent_pt->left; 
 
 			
-			if ((uncle_pt != NULL) && (uncle_pt->color == 
-													RED)) 
+			if ((uncle_pt != NULL) && (uncle_pt->color == RED)) 
 			{ 
 				grand_parent_pt->color = RED; 
 				parent_pt->color = BLACK; 
